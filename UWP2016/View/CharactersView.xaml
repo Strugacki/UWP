@@ -10,7 +10,7 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="Character Name: " Height="30" Width="263" FontSize="18" HorizontalAlignment="Left" Padding="65,0,0,0"/>
-            <TextBox Name="CharacterToSearch" Height="30" HorizontalAlignment="Left" Width="263"/>
+            <TextBox Name="CharacterToSearch" Text="{Binding Characters.Name}" Height="30" HorizontalAlignment="Left" Width="263"/>
             <Button Name="SearchCharacters" Content="Search" Height="30" Width="263" FontSize="12" />
         </StackPanel>
     </Grid>

@@ -9,54 +9,187 @@ namespace UWP2016.Model
 {
     class Characters : INotifyPropertyChanged
     {
-        public String name
+
+
+
+        private String _Name;
+        private String _Culture;
+        private String _Born;
+        private String _Died;
+        private String[] _Titles;
+        private String[] _Aliases;
+        private String _Father;
+        private String _Mother;
+        private String[] _Allegiances;
+        private String[] _TvSeries;
+        private String[] _PlayedBy;
+
+        public Characters(string _Name)
+        {
+            this._Name = _Name;
+        }
+
+        public Characters(string _Name, string _Culture, string _Born, string _Died, string[] _Titles, string[] _Aliases, string _Father, string _Mother, string[] _Allegiances, string[] _TvSeries, string[] _PlayedBy)
+        {
+            this._Name = _Name;
+            this._Culture = _Culture;
+            this._Born = _Born;
+            this._Died = _Died;
+            this._Titles = _Titles;
+            this._Aliases = _Aliases;
+            this._Father = _Father;
+            this._Mother = _Mother;
+            this._Allegiances = _Allegiances;
+            this._TvSeries = _TvSeries;
+            this._PlayedBy = _PlayedBy;
+        }
+
+        public String Name
         {
             get
             {
-                return name;
+                return _Name;
             }
             set
-
             {
-                name = value;
-                OnPropertyChanged("name");
+                _Name = value;
+                OnPropertyChanged("Name");
             }
         }
-        public String culture { get; set; }
-        public String born { get; set; }
-        public String died { get; set; }
-        public String[] titles { get; set; }
-        public String[] aliases { get; set; }
-        public String father { get; set; }
-        public String mother { get; set; }
-        public String[] allegiances { get; set; }
-        public String[] tvSeries { get; set; }
-        public String[] playedBy { get; set; }
 
-        public Characters()
+        public string Culture
         {
+            get
+            {
+                return _Culture;
+            }
 
+            set
+            {
+                _Culture = value;
+            }
         }
 
-        public Characters(String charName)
+        public string Born
         {
-            this.name = charName;
+            get
+            {
+                return _Born;
+            }
+
+            set
+            {
+                _Born = value;
+            }
         }
 
-        public Characters(string name, string culture, string born, string died, string[] titles, string[] aliases, string father, string mother, string[] allegiances, string[] tvSeries, string[] playedBy)
+        public string Died
         {
-            this.name = name;
-            this.culture = culture;
-            this.born = born;
-            this.died = died;
-            this.titles = titles;
-            this.aliases = aliases;
-            this.father = father;
-            this.mother = mother;
-            this.allegiances = allegiances;
-            this.tvSeries = tvSeries;
-            this.playedBy = playedBy;
+            get
+            {
+                return _Died;
+            }
+
+            set
+            {
+                _Died = value;
+            }
         }
+
+        public string[] Titles
+        {
+            get
+            {
+                return _Titles;
+            }
+
+            set
+            {
+                _Titles = value;
+            }
+        }
+
+        public string[] Aliases
+        {
+            get
+            {
+                return _Aliases;
+            }
+
+            set
+            {
+                _Aliases = value;
+            }
+        }
+
+        public string Father
+        {
+            get
+            {
+                return _Father;
+            }
+
+            set
+            {
+                _Father = value;
+            }
+        }
+
+        public string Mother
+        {
+            get
+            {
+                return _Mother;
+            }
+
+            set
+            {
+                _Mother = value;
+            }
+        }
+
+        public string[] Allegiances
+        {
+            get
+            {
+                return _Allegiances;
+            }
+
+            set
+            {
+                _Allegiances = value;
+            }
+        }
+
+        public string[] TvSeries
+        {
+            get
+            {
+                return _TvSeries;
+            }
+
+            set
+            {
+                _TvSeries = value;
+            }
+        }
+
+        public string[] PlayedBy
+        {
+            get
+            {
+                return _PlayedBy;
+            }
+
+            set
+            {
+                _PlayedBy = value;
+            }
+        }
+
+
+
+
 
 
 

@@ -3,58 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using UWP2016.Model;
-using UWP2016.Command;
-
 namespace UWP2016.ViewModel
 {
-    internal class CharactersViewModel
+   internal class CharactersViewModel
     {
         public CharactersViewModel()
         {
-            characters = new Characters();
-            characters.name = "Jon";
-            //GetCharacterCommand = new GetCharacterCommand(this);
+            _Characters = new Characters("Jon");
         }
 
-        private Characters characters;
-
+        private Characters _Characters;
 
         public Characters Characters
         {
             get
             {
-                return characters;
-            }
-
-            set
-            {
-                characters = value;
+                return _Characters;
             }
         }
 
-       /* public bool CanExecuteRequest
+        public void SaveResponse()
         {
-            get
-            {
-                if (Characters == null)
-                {
-                    return false;
-                }
-                return !String.IsNullOrWhiteSpace(Characters.name);
-            }
-        }  */
 
-       /* public ICommand GetCharacterCommand
-        {
-            get;
-            private set;
-        } */
-
-        public void getCharacterFromAPI()
-        {
-            Characters.name = "test";
         }
     }
 }
