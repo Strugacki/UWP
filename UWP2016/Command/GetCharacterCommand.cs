@@ -18,28 +18,26 @@ namespace UWP2016.Command
 
         private CharactersViewModel ViewModel;
 
-
-        event EventHandler ICommand.CanExecuteChanged
+        public event EventHandler CanExecuteChanged
         {
             add
             {
-                throw new NotImplementedException();
+                
             }
-
             remove
             {
-                throw new NotImplementedException();
+
             }
         }
 
-        bool ICommand.CanExecute(object parameter)
+        public bool CanExecute(object parameter)
         {
-            throw new NotImplementedException();
+            return ViewModel.CanExecuteRequest;
         }
 
-        void ICommand.Execute(object parameter)
+        public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            ViewModel.getCharacterFromAPI();
         }
     }
 }
