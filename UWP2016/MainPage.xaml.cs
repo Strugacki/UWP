@@ -25,7 +25,7 @@ namespace UWP2016
         public MainPage()
         {
             this.InitializeComponent();
-            //View.Navigate(typeof(View.HomeView));
+            View.Navigate(typeof(View.HomeView));
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -40,7 +40,7 @@ namespace UWP2016
 
         private void homePanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            //View.Navigate(typeof(View.HomeView));
+            View.Navigate(typeof(View.HomeView));
         }
 
         private void charactersPanel_Tapped(object sender, TappedRoutedEventArgs e)
