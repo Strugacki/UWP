@@ -132,17 +132,23 @@ namespace UWP2016.UWP2016_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[7];
             _typeNameTable[0] = "UWP2016.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UWP2016.View.HomeView";
+            _typeNameTable[3] = "UWP2016.View.BooksView";
+            _typeNameTable[4] = "UWP2016.View.CharactersView";
+            _typeNameTable[5] = "UWP2016.View.HomeView";
+            _typeNameTable[6] = "UWP2016.View.KingdomsView";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[7];
             _typeTable[0] = typeof(global::UWP2016.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UWP2016.View.HomeView);
+            _typeTable[3] = typeof(global::UWP2016.View.BooksView);
+            _typeTable[4] = typeof(global::UWP2016.View.CharactersView);
+            _typeTable[5] = typeof(global::UWP2016.View.HomeView);
+            _typeTable[6] = typeof(global::UWP2016.View.KingdomsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -178,7 +184,10 @@ namespace UWP2016.UWP2016_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::UWP2016.MainPage(); }
-        private object Activate_3_HomeView() { return new global::UWP2016.View.HomeView(); }
+        private object Activate_3_BooksView() { return new global::UWP2016.View.BooksView(); }
+        private object Activate_4_CharactersView() { return new global::UWP2016.View.CharactersView(); }
+        private object Activate_5_HomeView() { return new global::UWP2016.View.HomeView(); }
+        private object Activate_6_KingdomsView() { return new global::UWP2016.View.KingdomsView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -205,9 +214,30 @@ namespace UWP2016.UWP2016_XamlTypeInfo
                 xamlType = new global::UWP2016.UWP2016_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  UWP2016.View.HomeView
+            case 3:   //  UWP2016.View.BooksView
                 userType = new global::UWP2016.UWP2016_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_HomeView;
+                userType.Activator = Activate_3_BooksView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  UWP2016.View.CharactersView
+                userType = new global::UWP2016.UWP2016_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_CharactersView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  UWP2016.View.HomeView
+                userType = new global::UWP2016.UWP2016_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_HomeView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  UWP2016.View.KingdomsView
+                userType = new global::UWP2016.UWP2016_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_KingdomsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

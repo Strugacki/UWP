@@ -1,3 +1,6 @@
 App.xbf
 MainPage.xbf
+View\BooksView.xbf
+View\CharactersView.xbf
 View\HomeView.xbf
+View\KingdomsView.xbf

@@ -45,17 +45,17 @@ namespace UWP2016
 
         private void charactersPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            //View.Navigate(typeof(View.CharactersView));
+            View.Navigate(typeof(View.CharactersView));
         }
 
         private void booksPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            //View.Navigate(typeof(View.BooksView));
+            View.Navigate(typeof(View.BooksView));
         }
 
         private void kingdomsPanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            //View.Navigate(typeof(View.KingdomsView));
+            View.Navigate(typeof(View.KingdomsView));
         }
     }
 }
