@@ -13,11 +13,13 @@ namespace UWP2016.ViewModel
     {
         public CharactersViewModel()
         {
-            characters = new Characters("-- brak --");
-            GetCharacterCommand = new GetCharacterCommand(this);
+            characters = new Characters();
+            characters.name = "Jon";
+            //GetCharacterCommand = new GetCharacterCommand(this);
         }
 
         private Characters characters;
+
 
         public Characters Characters
         {
@@ -32,7 +34,7 @@ namespace UWP2016.ViewModel
             }
         }
 
-        public bool CanExecuteRequest
+       /* public bool CanExecuteRequest
         {
             get
             {
@@ -42,13 +44,13 @@ namespace UWP2016.ViewModel
                 }
                 return !String.IsNullOrWhiteSpace(Characters.name);
             }
-        }
+        }  */
 
-        public ICommand GetCharacterCommand
+       /* public ICommand GetCharacterCommand
         {
             get;
             private set;
-        } 
+        } */
 
         public void getCharacterFromAPI()
         {

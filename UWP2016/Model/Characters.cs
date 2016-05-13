@@ -16,6 +16,7 @@ namespace UWP2016.Model
                 return name;
             }
             set
+
             {
                 name = value;
                 OnPropertyChanged("name");

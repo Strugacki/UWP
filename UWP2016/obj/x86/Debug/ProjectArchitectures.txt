@@ -1,1 +1,0 @@
-D:\Programowanie\GitHub\UWP\UWP2016\UWP2016.csproj;x86
