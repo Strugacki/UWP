@@ -1,10 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
-  <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="GetCharacterCommand" />
-    <RootPropertyPathName Name="Character" />
-    <RootPropertyPathName Name="name" />
-  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -72,7 +67,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="UWP2016.MainPage" />
@@ -81,12 +75,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="UWP2016.View.BooksView" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="UpdateSourceTrigger" />
-    </RootType>
     <RootType FullName="UWP2016.View.CharactersView" />
     <RootType FullName="UWP2016.View.HomeView" />
     <RootType FullName="UWP2016.View.KingdomsView" />
