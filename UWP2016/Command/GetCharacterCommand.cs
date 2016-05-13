@@ -22,7 +22,7 @@ namespace UWP2016.Command
         {
             add
             {
-                
+
             }
             remove
             {

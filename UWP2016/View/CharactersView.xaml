@@ -11,7 +11,7 @@
         <StackPanel>
             <TextBlock Text="Character Name: " Height="30" Width="263" FontSize="18" HorizontalAlignment="Left" Padding="65,0,0,0"/>
             <TextBox Name="CharacterToSearch" Text="{Binding Character.name, UpdateSourceTrigger=PropertyChanged}" Height="30" HorizontalAlignment="Left" Width="263"/>
-            <Button Name="SearchCharacters" Command="{Binding GetCharacterCommand}" Content="Search" Height="30" Width="263" FontSize="12" />
+            <Button Name="SearchCharacters" Content="Search" Height="30" Width="263" FontSize="12" />
         </StackPanel>
     </Grid>
 </Page>

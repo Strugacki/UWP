@@ -13,7 +13,7 @@ namespace UWP2016.ViewModel
     {
         public CharactersViewModel()
         {
-            characters = new Characters();
+            characters = new Characters("-- brak --");
             GetCharacterCommand = new GetCharacterCommand(this);
         }
 
