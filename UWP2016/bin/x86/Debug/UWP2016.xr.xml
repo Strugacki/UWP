@@ -50,6 +50,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Name" />
@@ -64,5 +68,6 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="UWP2016.MainPage" />
+    <RootType FullName="UWP2016.View.HomeView" />
   </Roots.RootTypes>
 </Roots>

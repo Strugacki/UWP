@@ -194,3 +194,8 @@ D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\qualifiers.txt
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\ProjectArchitectures.txt
+D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\View\HomeView.xbf
+D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\HomeView.g.i.cs
+D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\HomeView.g.cs
+D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\HomeView.xaml
+D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\HomeView.xbf
