@@ -69,14 +69,16 @@ namespace UWP2016.ViewModel
         public async void FindCharacter()
         {
             var http = new HttpClient();
-            String url = String.Format("https://anapioficeandfire.com/api/characters?name=Jon Snow");
+            List<Characters> listOfCharacters = null;
+            var url =String.Format("https://anapioficeandfire.com/api/characters?name={0}", Name);
             Debug.WriteLine(url);
             var response = await http.GetAsync(url);
             var result = await response.Content.ReadAsStringAsync();
             Debug.WriteLine(result);
-            Characters character = JsonConvert.DeserializeObject<Characters>(result);
-            Father = character.born;
-            Mother = character.culture;
+            listOfCharacters = JsonConvert.DeserializeObject<List<Characters>>(result);
+
+            Father = listOfCharacters[0].born;
+            Mother = listOfCharacters[0].culture;
 
         }
 
