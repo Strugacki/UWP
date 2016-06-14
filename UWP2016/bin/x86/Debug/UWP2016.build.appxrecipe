@@ -373,6 +373,18 @@
       <PackagePath>Assets\gameOfThrones88.scale-200.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\back.jpg">
+      <PackagePath>images\back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\bird.jpg">
+      <PackagePath>images\bird.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\game-of-thrones.jpg">
+      <PackagePath>images\game-of-thrones.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\gotback.jpg">
+      <PackagePath>images\gotback.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

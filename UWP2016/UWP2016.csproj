@@ -135,6 +135,10 @@
     <Content Include="Assets\gameOfThrones71.scale-150.jpg" />
     <Content Include="Assets\gameOfThrones71.scale-400.jpg" />
     <Content Include="Assets\gameOfThrones88.scale-200.jpg" />
+    <Content Include="images\back.jpg" />
+    <Content Include="images\bird.jpg" />
+    <Content Include="images\game-of-thrones.jpg" />
+    <Content Include="images\gotback.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

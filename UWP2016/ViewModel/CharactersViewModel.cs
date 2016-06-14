@@ -14,10 +14,12 @@ namespace UWP2016.ViewModel
 {
     class CharactersViewModel : MainViewModel
     {
-        private Characters character_ = null;
+        private Characters character_;
         private String nameToSearch;
-        private String father = " ";
-        private String mother = " ";
+        private String father;
+        private String mother;
+        private String culture;
+        private String title;
 
         public String Name
         {
@@ -58,6 +60,31 @@ namespace UWP2016.ViewModel
             }
         }
 
+        public String Culture
+        {
+            get
+            {
+                return culture;
+            }
+            set
+            {
+                culture = value;
+                OnPropertyChanged("Culture");
+            }
+        }
+
+        public String Title
+        {
+            get
+            {
+                return title;
+            }
+            set
+            {
+                title = value;
+                OnPropertyChanged("Title");
+            }
+        }
 
         public ICommand GetCharacterCommand
         {
@@ -76,9 +103,12 @@ namespace UWP2016.ViewModel
             var result = await response.Content.ReadAsStringAsync();
             Debug.WriteLine(result);
             listOfCharacters = JsonConvert.DeserializeObject<List<Characters>>(result);
-
-            Father = listOfCharacters[0].born;
-            Mother = listOfCharacters[0].culture;
+            character_ = listOfCharacters[0];
+            Debug.WriteLine(character_.culture);
+            Father = character_.father;
+            Mother = character_.mother;
+            Culture = character_.culture;
+            Title = character_.titles[0];        
 
         }
 

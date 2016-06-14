@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/bird.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -17,7 +20,7 @@
                     FontFamily="Segoe MDL2 Assets" 
                     Content="&#xE700;" 
                     FontSize="36"
-                                                  />
+                                                   Background="LightBlue"/>
         </RelativePanel>
         <SplitView x:ConnectionId='1' Name="SplitView" 
                    Grid.Row="1" 
@@ -28,7 +31,7 @@
             <SplitView.Pane>
                 <ListBox x:ConnectionId='2' Name="ListBox" 
                      SelectionMode="Single" 
-                                                                >
+                                                                 Background="LightBlue">
                     <ListBoxItem>
                         <StackPanel x:ConnectionId='6' Name="homePanel" Orientation="Horizontal"                          >
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xEA8A;"/>

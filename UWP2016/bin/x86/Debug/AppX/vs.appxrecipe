@@ -22,13 +22,13 @@
     <AppXManifest Include="D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-14T14:31:09.469</Modified>
+      <Modified>2016-06-14T20:02:35.393</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\UWP2016.exe">
       <PackagePath>entrypoint\UWP2016.exe</PackagePath>
-      <Modified>2016-06-14T14:31:07.409</Modified>
+      <Modified>2016-06-14T20:02:33.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\snuff\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -497,6 +497,22 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-14T11:08:21.775</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\back.jpg">
+      <PackagePath>images\back.jpg</PackagePath>
+      <Modified>2016-06-14T16:07:24.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\bird.jpg">
+      <PackagePath>images\bird.jpg</PackagePath>
+      <Modified>2016-06-14T16:28:36.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\game-of-thrones.jpg">
+      <PackagePath>images\game-of-thrones.jpg</PackagePath>
+      <Modified>2016-06-14T15:49:14.769</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\images\gotback.jpg">
+      <PackagePath>images\gotback.jpg</PackagePath>
+      <Modified>2016-06-14T12:19:16.469</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-05-12T22:59:03.385</Modified>
@@ -533,7 +549,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\UWP2016.xr.xml">
       <PackagePath>UWP2016.xr.xml</PackagePath>
-      <Modified>2016-06-14T13:41:39.864</Modified>
+      <Modified>2016-06-14T19:24:39.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -541,11 +557,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-14T13:41:41.649</Modified>
+      <Modified>2016-06-14T20:01:16.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\Core\UWP2016.exe">
       <PackagePath>UWP2016.exe</PackagePath>
-      <Modified>2016-06-14T14:31:09.246</Modified>
+      <Modified>2016-06-14T20:02:35.059</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
