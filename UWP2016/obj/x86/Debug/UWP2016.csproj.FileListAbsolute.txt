@@ -214,3 +214,4 @@ D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\KingdomsView.xaml
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\BooksView.xbf
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\CharactersView.xbf
 D:\Programowanie\GitHub\UWP\UWP2016\obj\x86\Debug\View\KingdomsView.xbf
+D:\Programowanie\GitHub\UWP\UWP2016\bin\x86\Debug\Newtonsoft.Json.dll

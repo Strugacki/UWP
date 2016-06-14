@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Characters" />
+    <RootPropertyPathName Name="Mother" />
+    <RootPropertyPathName Name="Father" />
+    <RootPropertyPathName Name="GetCharacterCommand" />
     <RootPropertyPathName Name="Name" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -71,6 +73,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="UWP2016.MainPage" />
@@ -82,7 +85,13 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="UWP2016.View.BooksView" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="UWP2016.View.CharactersView" />
     <RootType FullName="UWP2016.View.HomeView" />
     <RootType FullName="UWP2016.View.KingdomsView" />

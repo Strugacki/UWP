@@ -98,6 +98,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Command\GetCharacterCommand.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -106,6 +107,7 @@
     <Compile Include="Model\Kingdoms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\CharactersViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\BooksView.xaml.cs">
       <DependentUpon>BooksView.xaml</DependentUpon>
     </Compile>
@@ -126,6 +128,13 @@
     <None Include="UWP2016_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\gameOfThrones150.scale-100.jpg" />
+    <Content Include="Assets\gameOfThrones150.scale-200.jpg" />
+    <Content Include="Assets\gameOfThrones620.scale-200.jpg" />
+    <Content Include="Assets\gameOfThrones71.scale-100.jpg" />
+    <Content Include="Assets\gameOfThrones71.scale-150.jpg" />
+    <Content Include="Assets\gameOfThrones71.scale-400.jpg" />
+    <Content Include="Assets\gameOfThrones88.scale-200.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

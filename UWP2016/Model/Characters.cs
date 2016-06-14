@@ -7,206 +7,192 @@ using System.Threading.Tasks;
 
 namespace UWP2016.Model 
 {
-    class Characters : INotifyPropertyChanged
+    class Characters
     {
 
+        public string name { get; set; }
+        public string gender { get; set; }
+        public string culture { get; set; }
+        public string born { get; set; }
+        public string died { get; set; }
+        public string father { get; set; }
+        public string mother { get; set; }
+        public string spouse { get; set; }
 
 
-        private String _Name;
-        private String _Culture;
-        private String _Born;
-        private String _Died;
-        private String[] _Titles;
-        private String[] _Aliases;
-        private String _Father;
-        private String _Mother;
-        private String[] _Allegiances;
-        private String[] _TvSeries;
-        private String[] _PlayedBy;
+        /* private String _Name;
+         private String _Culture;
+         private String _Born;
+         private String _Died;
+         private String[] _Titles;
+         private String[] _Aliases;
+         private String _Father;
+         private String _Mother;
+         private String[] _Allegiances;
+         private String[] _TvSeries;
+         private String[] _PlayedBy;*/
 
-        public Characters(string _Name)
-        {
-            this._Name = _Name;
-        }
+        /* public Characters()
+         {
 
-        public Characters(string _Name, string _Culture, string _Born, string _Died, string[] _Titles, string[] _Aliases, string _Father, string _Mother, string[] _Allegiances, string[] _TvSeries, string[] _PlayedBy)
-        {
-            this._Name = _Name;
-            this._Culture = _Culture;
-            this._Born = _Born;
-            this._Died = _Died;
-            this._Titles = _Titles;
-            this._Aliases = _Aliases;
-            this._Father = _Father;
-            this._Mother = _Mother;
-            this._Allegiances = _Allegiances;
-            this._TvSeries = _TvSeries;
-            this._PlayedBy = _PlayedBy;
-        }
+         }
 
-        public String Name
-        {
-            get
-            {
-                return _Name;
-            }
-            set
-            {
-                _Name = value;
-                OnPropertyChanged("Name");
-            }
-        }
+         public Characters(string _Name, string _Culture, string _Born, string _Died, string[] _Titles, string[] _Aliases, string _Father, string _Mother, string[] _Allegiances, string[] _TvSeries, string[] _PlayedBy)
+         {
+             this._Name = _Name;
+             this._Culture = _Culture;
+             this._Born = _Born;
+             this._Died = _Died;
+             this._Titles = _Titles;
+             this._Aliases = _Aliases;
+             this._Father = _Father;
+             this._Mother = _Mother;
+             this._Allegiances = _Allegiances;
+             this._TvSeries = _TvSeries;
+             this._PlayedBy = _PlayedBy;
+         }
 
-        public string Culture
-        {
-            get
-            {
-                return _Culture;
-            }
+         public String Name
+         {
+             get
+             {
+                 return _Name;
+             }
+             set
+             {
+                 _Name = value;
+             }
+         }
 
-            set
-            {
-                _Culture = value;
-            }
-        }
+         public string Culture
+         {
+             get
+             {
+                 return _Culture;
+             }
 
-        public string Born
-        {
-            get
-            {
-                return _Born;
-            }
+             set
+             {
+                 _Culture = value;
+             }
+         }
 
-            set
-            {
-                _Born = value;
-            }
-        }
+         public string Born
+         {
+             get
+             {
+                 return _Born;
+             }
 
-        public string Died
-        {
-            get
-            {
-                return _Died;
-            }
+             set
+             {
+                 _Born = value;
+             }
+         }
 
-            set
-            {
-                _Died = value;
-            }
-        }
+         public string Died
+         {
+             get
+             {
+                 return _Died;
+             }
 
-        public string[] Titles
-        {
-            get
-            {
-                return _Titles;
-            }
+             set
+             {
+                 _Died = value;
+             }
+         }
 
-            set
-            {
-                _Titles = value;
-            }
-        }
+         public string[] Titles
+         {
+             get
+             {
+                 return _Titles;
+             }
 
-        public string[] Aliases
-        {
-            get
-            {
-                return _Aliases;
-            }
+             set
+             {
+                 _Titles = value;
+             }
+         }
 
-            set
-            {
-                _Aliases = value;
-            }
-        }
+         public string[] Aliases
+         {
+             get
+             {
+                 return _Aliases;
+             }
 
-        public string Father
-        {
-            get
-            {
-                return _Father;
-            }
+             set
+             {
+                 _Aliases = value;
+             }
+         }
 
-            set
-            {
-                _Father = value;
-            }
-        }
+         public string Father
+         {
+             get
+             {
+                 return _Father;
+             }
 
-        public string Mother
-        {
-            get
-            {
-                return _Mother;
-            }
+             set
+             {
+                 _Father = value;
+             }
+         }
 
-            set
-            {
-                _Mother = value;
-            }
-        }
+         public string Mother
+         {
+             get
+             {
+                 return _Mother;
+             }
 
-        public string[] Allegiances
-        {
-            get
-            {
-                return _Allegiances;
-            }
+             set
+             {
+                 _Mother = value;
+             }
+         }
 
-            set
-            {
-                _Allegiances = value;
-            }
-        }
+         public string[] Allegiances
+         {
+             get
+             {
+                 return _Allegiances;
+             }
 
-        public string[] TvSeries
-        {
-            get
-            {
-                return _TvSeries;
-            }
+             set
+             {
+                 _Allegiances = value;
+             }
+         }
 
-            set
-            {
-                _TvSeries = value;
-            }
-        }
+         public string[] TvSeries
+         {
+             get
+             {
+                 return _TvSeries;
+             }
 
-        public string[] PlayedBy
-        {
-            get
-            {
-                return _PlayedBy;
-            }
+             set
+             {
+                 _TvSeries = value;
+             }
+         }
 
-            set
-            {
-                _PlayedBy = value;
-            }
-        }
+         public string[] PlayedBy
+         {
+             get
+             {
+                 return _PlayedBy;
+             }
 
+             set
+             {
+                 _PlayedBy = value;
+             }
+         }*/
 
-
-
-
-
-
-        #region INotifyPropertyChanged Members;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(String propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
-        #endregion
     }
 }
